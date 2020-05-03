@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sujeet Singh | Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+  <!-- HOSTED -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+    rel="stylesheet" type="text/css" />
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+  <!-- LOCAL -->
+  <script src="scripts/pt.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/modal.js"></script>
+</head>
+
+<body>
+  <div class="overflow-wrap">
+    <!-- HOME -->
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal">
+        <div class="carousel-wrap">
+          <div class="window">
+            <div id="carousel">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <i class="mdi mdi-chevron-left" id="prev"></i>
+            <i class="mdi mdi-chevron-right" id="next"></i>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+            <div class="button">
+              <i class="mdi mdi-open-in-new"></i>VIEW SITE
+            </div>
+          </a>
+        </div>
+        <i class="close mdi mdi-close"></i>
+      </div>
+    </div>
+
+    <section id="home" class="flex height-fix">
+      <div id="pt" class="canvas"></div>
+      <div class="flex">
+        <div class="text">
+          Hello, I'm <span class="highlight">Sujeet Singh</span>.
+          <br />
+          I'm a full-stack web developer.
+        </div>
+
+        <div class="button page-link" dest="about">
+          View my work <i class="mdi mdi-arrow-right"></i>
+        </div>
+
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" dest="home">home</div>
+            <div class="page-link" dest="about">about</div>
+            <div class="page-link" dest="portfolio">portfolio</div>
+            <div class="page-link" dest="experience">Experience</div>
+            <div class="page-link" dest="contact">contact</div>
+          </div>
+          <i class="mdi mdi-menu"></i>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">
+          ABOUT
+        </div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+        <div class="flex row label-wrap">
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                <div class="hexagon">
+                  <i class="mdi mdi-speedometer"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in">
+                <div class="label bold">Fast</div>
+                <div>
+                  Fast load times and lag free interaction, my highest
+                  priority.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                <div class="hexagon">
+                  <i class="mdi mdi-cellphone-link"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="label bold">Responsive</div>
+                <div>My layouts will work on any device, big or small.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex row-gt-sm">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                <div class="hexagon">
+                  <i class="mdi mdi-lightbulb-outline"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                <div class="label bold">Intuitive</div>
+                <div>Strong preference for easy to use, intuitive UX/UI.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                <div class="hexagon">
+                  <i class="mdi mdi-rocket"></i>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                <div class="label bold">Dynamic</div>
+                <div>
+                  Websites don't have to be static, I love making pages come
+                  to life.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me.png" class="me" />
+            <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+            <div class="label bold">Who's this guy?</div>
+
+            <div>
+              I'm a Final Year B.Tech student at <a class="highlight" href="http://www.iiitu.ac.in/"
+                target="_blank">Indian Institute of Information Technology, Una</a>. Have a penchant for
+              solving complex and interesting
+              problems.
+              I am passionate for projects of all sizes; from static web design and build, to dynamic websites.
+              <br />
+              I am always eager to learn new technologies and develop new things based on it.
+              <br />
+              <span class="page-link highlight" dest="contact">Let's make something special.</span>
+            </div>
+          </div>
+
+          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">C/C++</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+              <span>50%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+              <span>50%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">DataStructures</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">NodeJS</div>
+              </div>
+              <span>65%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">ExpressJS</div>
+              </div>
+              <span>65%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Flask</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">MongoDB</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">SQL</div>
+              </div>
+              <span>65%</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="flex" id="portfolio">
+      <div class="header waypoint" data-animation="slide-in-right">
+        PROJECTS
+      </div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">All</div>
+          <div class="filter" data-filter=".nodejs">NodeJS/ExpressJS</div>
+          <div class="filter" data-filter=".flask">Flask</div>
+          <div class="filter" data-filter=".js">JavaScript</div>
+        </div>
+        <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">All</div>
+            <div class="filter" data-filter=".nodejs">NodeJS/ExpressJS</div>
+            <div class="filter" data-filter=".flask">Flask</div>
+            <div class="filter" data-filter=".js">JavaScript</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+        <div class="mix nodejs" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">weAsk</div>
+              <span class="highlight">NodeJS / MongoDB</span>
+            </div>
+            <div class="button" id="weask">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/weAsk -->
+          </div>
+        </div>
+
+        <div class="mix nodejs" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Varta</div>
+              <span class="highlight">NodeJS / ExpressJS / SocketIO</span>
+            </div>
+            <div class="button" id="varta">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/varta -->
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Daily Quoting</div>
+              <span class="highlight">JavaScript / PWA </span>
+            </div>
+            <div class="button" id="daily">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/Daily-Quoting -->
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">IIITU Sports</div>
+              <span class="highlight">JavaScript / HTML5 / CSS</span>
+            </div>
+            <div class="button" id="iiitusports">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/iiitusports -->
+          </div>
+        </div>
+
+        <div class="mix nodejs" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Spark Your Mind</div>
+              <span class="highlight">Nodejs / ExpressJS / MongoDB</span>
+            </div>
+            <div class="button" id="sparkmind">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/Spark-Your-Mind -->
+          </div>
+        </div>
+
+        <div class="mix c" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Hello World</div>
+              <span class="highlight">C / C++</span>
+            </div>
+            <div class="button" id="helloworld">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/hello-world -->
+          </div>
+        </div>
+
+        <div class="mix flask" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Note App</div>
+              <span class="highlight">Python / Flask</span>
+            </div>
+            <div class="button" id="noteapp">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/NoteApp -->
+          </div>
+        </div>
+
+        <div class="mix flask" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Book Cloud</div>
+              <span class="highlight"> Python / Flask / Sqlite3</span>
+            </div>
+            <div class="button" id="bookcloud">LEARN MORE</div>
+            <!-- https://github.com/powerfist01/Book-Cloud -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="flex" id="experience">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">EXPERIENCE</div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+        <div style="width: 500px;">
+          <div class="flex row label-wrap">
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap ">
+                <div class="wrap waypoint" data-animation="flip-in-x">
+                  <div class="label bold">Flick2Know Technologies Pvt. Ltd.</div>
+                </div>
+                <div class="waypoint" data-animation="fade-in">
+                  <div class="label highlight" style="text-align: center;">Internship - Backend Developer</div>
+                  <div style="text-align: center;">
+                    (May 2019 - July 2019) <br /> <br />
+                    <div style="text-align: justify; font-weight: 500 ;">
+                      <i class="mdi mdi-play"></i>
+                      Initially worked on their dashboard using NodeJS framework <span
+                        class="highlight">ExpressJS</span> and
+                      <span class="highlight">MongoDB</span>
+                      to add API's for the website of their new product <span class="highlight">Qart
+                        Fashhion</span>. <br />
+                        <i class="mdi mdi-play"></i>
+                      Performed various aggregations on the database using <span class="highlight">MongoClient</span>
+                      and <span class="highlight">Mongoose</span>.
+                      <br />
+                      <i class="mdi mdi-play"></i>
+                      Learned JavaScript libraries <span class="highlight">CubeJS</span> and <span
+                        class="highlight">PivotTableJS</span> used in data analytics to organize and
+                      display the result dynamically.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+
+    <!-- <section id="experience">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">EXPERIENCE</div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+        <div class="flex row wrap">
+          <div class="flex row-gt-sm">
+            <div class="label bold">Flick2Know Technologies Pvt. Ltd.</div>
+            <div class="text bold">(May 2019 - July 2019)</div>
+            <div class="text">Internship - Backend Developer</div>
+            
+
+        <div class="flex row wrap">
+          <div class="flex row-gt-sm">
+            <a href="https://medium.com/@powerfist01/deploying-node-js-apps-on-firebase-e2751a3f1cee" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-1"></div>
+                  <div class="label bold">Deploying Node.js apps on Firebase</div>
+                  <div class="date">JULY 27, 2019</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    At one time or another, as a developer, we've all found
+                    ourselves hopelessly stuck on a coding issue...
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://blog.eyecuelab.com/2015/03/19/this-is-your-brain-on-caffeine/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".2s">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-2"></div>
+                  <div class="label bold">
+                    The JavaScript Fetch
+                  </div>
+                  <div class="date">MAY 2, 2020</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    If there's one thing I can truly claim to be an expert on,
+                    it's staying awake. For five years I struggled to stay
+                    employed...
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flex row-gt-sm">
+            <a href="http://blog.eyecuelab.com/2015/03/04/getting-a-handle-on-handlebars/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".4s">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-3"></div>
+                  <div class="label bold">Getting a Handle on Handlebars</div>
+                  <div class="date">MARCH 04, 2015</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    Here at EyeCue Lab we render most of our data-laden HTML
+                    pages in Handlebar templates...
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://blog.eyecuelab.com/2015/02/23/essential_extensions/" target="_blank">
+              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".6s">
+                <div class="fade-wrap">
+                  <div class="thumb" id="thumb-4"></div>
+                  <div class="label bold">
+                    5 Extensions for Your Chrome Toolbelt
+                  </div>
+                  <div class="date">FEBRUARY 23, 2015</div>
+                  <div class="bar"></div>
+                  <div class="text">
+                    If you're not using Google Chrome as a front-end web
+                    developer, you're missing out. Not only is Chrome the...
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg>
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">
+          CONTACT
+        </div>
+        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+        <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
+          On the off chance that you might want to connect with me, be it for investigating innovation, <br /> or to
+          simply say hello, don't hesitate to send me a message.
+        </div>
+        <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+          <input placeholder="Name" type="text" name="name" required />
+          <input placeholder="Enter email" type="email" name="email" required />
+          <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          <div id="success">
+            <div>
+              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+            </div>
+          </div>
+          <input class="button" type="submit" id="submit" value="SUBMIT" style="margin-bottom: 30px;" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+      <div class="icon-wrap flex row">
+        <a href="https://www.linkedin.com/in/mattwilliams85">
+          <div class="flex icon" id="icon-2">
+            <i class="mdi mdi-linkedin"></i>
+          </div>
+        </a>
+
+        <a href="https://www.github.com/powerfist01">
+          <div class="flex icon" id="icon-3">
+            <i class="mdi mdi-github-box "></i>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/matthew.williams.351">
+          <div class="flex icon" id="icon-4">
+            <i class="mdi mdi-facebook"></i>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/infinite_edge/">
+          <div class="flex icon" id="icon-5">
+            <i class="mdi mdi-instagram"></i>
+          </div>
+        </a>
+      </div>
+      <div class="info-box">
+        <div class="footnote">
+          SUJEET SINGH <span class="highlight">&copy;2020</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+<script src="scripts/canvas.js"></script>
