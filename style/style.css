@@ -443,7 +443,7 @@ nav .active {
   cursor: pointer;
   font-size: 10pt;
   font-weight: 600;
-  left: 10px;
+  margin-left: 170px;
   padding: 11px 30px;
   pointer-events: none;
   position: absolute;
@@ -458,6 +458,32 @@ nav .active {
   background: #fff;
   color: #e31b6d;
 }
+
+/* Button Here */
+.modal-wrap .button1 {
+  background: #e31b6d;
+  border: 0;
+  bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 10pt;
+  font-weight: 600;
+  left: 10px;
+  padding: 11px 30px;
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+.modal-wrap .button1.visible {
+  pointer-events: initial;
+  visibility: visible;
+}
+.modal-wrap .button:hover {
+  background: #fff;
+  color: #e31b6d;
+}
+
 .modal-wrap .carousel {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }

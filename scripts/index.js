@@ -187,7 +187,7 @@ $(function() {
     e.preventDefault();
 
     $.ajax({
-      url: 'https://formspree.io/sujeets207@gmail.com',
+      url: 'https://formspree.io/mzbjbeew',
       method: 'POST',
       data: { message: $('form').serialize() },
       dataType: 'json'
